@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+details summary::-webkit-details-marker {
+  background-color: rgb(17, 116, 116);
+}
+

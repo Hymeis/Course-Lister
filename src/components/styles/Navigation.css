@@ -1,0 +1,17 @@
+.navbar {
+    background-color: orange;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: right; /* Align to the right */
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #FFA500; /* Darker orange */
+}
