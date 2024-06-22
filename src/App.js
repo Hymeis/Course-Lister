@@ -2,6 +2,7 @@ import React from 'react';
 import FilterableCourseTable from './FilterableCourseTable';
 import Navigation from './components/Navigation'
 import courseData from './course-list/Spring_2024_sorted.json';
+import './components/styles/base.css'
 
 function App() {
   return (
