@@ -1,13 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-function SearchBar({ filterText, onFilterTextChange }) {
+function SearchBar({ onSearch }) {
+  const [inputValue, setInputValue] = useState('');
+
+  const handleInputChange = (e) => {
+    setInputValue(e.target.value);
+  };
+
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      onSearch(inputValue);
+    }
+  };
+
   return (
     <form>
       <input
         type="text"
         placeholder="Search..."
-        value={filterText}
-        onChange={e => onFilterTextChange(e.target.value)}
+        value={inputValue}
+        onChange={handleInputChange}
+        onKeyPress={handleKeyPress}
       />
     </form>
   );

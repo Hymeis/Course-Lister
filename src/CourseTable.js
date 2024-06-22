@@ -1,14 +1,10 @@
 import React from 'react';
-import CourseCategoryRow from './CourseCategoryRow';
 import CourseRow from './CourseRow';
 
-function CourseTable({ courses, filterText }) {
+function CourseTable({ courses }) {
   const rows = [];
 
   courses.forEach(course => {
-    if (course["Course Section"].indexOf(filterText) === -1) {
-      return;
-    }
     rows.push(<CourseRow course={course} key={course["Course Section"]} />);
   });
 
