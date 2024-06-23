@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SearchBar from './SearchBar';
+import SearchBar from './components/SearchBar';
 import CourseTable from './CourseTable';
 
 function FilterableCourseTable({ courses }) {

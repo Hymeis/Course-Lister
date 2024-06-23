@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { coreTags, pathwayTags } from './consts/tags';
+import { coreTags, pathwayTags } from '../consts/tags';
 
 function SearchBar({ onSearch }) {
   const [inputValue, setInputValue] = useState('');

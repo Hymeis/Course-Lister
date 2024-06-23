@@ -1,0 +1,1 @@
+export const terms = ["Fall 2024", "Summer 2024"];
