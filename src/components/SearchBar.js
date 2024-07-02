@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { coreTags, pathwayTags } from '../consts/tags';
+import './styles/Search.css'
 
 function SearchBar({ onSearch }) {
   const [inputValue, setInputValue] = useState('');
@@ -16,7 +17,7 @@ function SearchBar({ onSearch }) {
   };
 
   return (
-    <form onSubmit={handleSearchClick}>
+    <form onSubmit={handleSearchClick} id="search-bar">
       <input
         type="text"
         placeholder="Search..."

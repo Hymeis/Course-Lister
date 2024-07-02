@@ -1,6 +1,11 @@
+@import 'index.css';
+
 .navbar {
     background-color: #012622;
     overflow: hidden;
+    position:sticky;
+    top:0;
+    height: var(--navbarHeight);
 }
 
 .navbar a {
@@ -14,4 +19,10 @@
 
 .navbar a:hover {
     background-color: #FFA500; /* Darker orange */
+}
+
+.page-navigation{
+    background-color:#003B36;
+    position:sticky;
+    bottom:0;
 }

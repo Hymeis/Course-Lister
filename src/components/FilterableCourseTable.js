@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SearchBar from './components/SearchBar';
+import SearchBar from './SearchBar';
 import CourseTable from './CourseTable';
 
 function FilterableCourseTable({ courses }) {
@@ -43,7 +43,7 @@ function FilterableCourseTable({ courses }) {
   };
 
   return (
-    <div>
+    <div id="search-bar-wrapper">
       <SearchBar onSearch={handleSearch} />
       <CourseTable courses={currentCourses} />
       <div className="page-navigation">

@@ -1,0 +1,12 @@
+@import 'index.css';
+
+#search-bar{
+    position:sticky;
+    top:var(--navbarHeight);
+    padding: 20px 20px;
+    background-color: #003B36;
+}
+
+#search-bar-wrapper{
+    
+}
